@@ -29,32 +29,32 @@ export default function PotensiCarousel() {
     {
       title: "Penggilingan Padi",
       desc: "Mengolah hasil pertanian warga, Jetis memiliki layanan penggilingan padi yang membantu operasional musim panen dan mendukung ketahanan pangan lokal.",
-      image: "/Image/Pertanian/PanoPT1.webp",
-      imageMobile: "/Image/Mobile/PT_mobile.webp",
+      image: "/Image/Penggilingan Padi/DSC03556.JPG",
+      imageMobile: "/Image/Penggilingan Padi/DSC03556.JPG",
     },
     {
       title: "Sentra Bibit Jamur",
       desc: "Produksi bibit jamur mandiri yang dilakukan dengan proses sterilisasi dan pembibitan terkontrol agar hasil panen stabil dan siap diedarkan ke pasar pertanian.",
-      image: "/Image/Tambak Ikan/PanoTI1.webp",
-      imageMobile: "/Image/Mobile/TI_mobile.webp",
+      image: "/Image/Sentra Bibit Jamur/IMG_8471.HEIC",
+      imageMobile: "/Image/Sentra Bibit Jamur/IMG_8471.HEIC",
     },
     {
       title: "Bengkel Andong Pandawa Lima",
       desc: "Meneruskan jejak sejarah kereta tradisional dengan keahlian pembuatan roda dan reparasi andong turun-temurun ala Jetis Pande.",
-      image: "/Image/Pantai Pulau Putri/PanoPPP1.webp",
-      imageMobile: "/Image/Mobile/PPP_mobile.webp",
+      image: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG",
+      imageMobile: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG",
     },
     {
       title: "Bengkel Andong Pak Hono",
       desc: "Jasa perbaikan dan pembuatan andong yang terus mewarisi teknik tradisional manual sejak era keemasan Jetis Roda.",
-      image: "/Image/Sekam Bakar/SB2.webp",
-      imageMobile: "/Image/Mobile/SB_mobile.webp",
+      image: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG",
+      imageMobile: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG",
     },
     {
       title: "Sentra Jamu Tradisional",
       desc: "Mengolah tanaman empon-empon pekarangan menjadi produk jamu segar seperti kunyit asam dan seruni yang berkualitas dan menyehatkan.",
-      image: "/Image/Rumah Dodol/PanoRD1.webp",
-      imageMobile: "/Image/Mobile/RD_mobile.webp",
+      image: "/Image/SENTRA JAMU_/DSC03641.JPG",
+      imageMobile: "/Image/SENTRA JAMU_/DSC03641.JPG",
     },
   ];
 

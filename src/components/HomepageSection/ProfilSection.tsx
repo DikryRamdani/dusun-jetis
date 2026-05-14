@@ -27,8 +27,8 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Kantor Desa/KD1.webp"
-                    alt="Desa Segarjaya 1"
+                    src="/Image/Bengkel Andong Pak Hono_/DSC03541.JPG"
+                    alt="Dusun Jetis 1"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
                 </motion.div>
@@ -46,8 +46,8 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Gapura/Gapura1.webp"
-                    alt="Desa Segarjaya 2"
+                    src="/Image/Posyandu/IMG-20260426-WA0001.jpg"
+                    alt="Dusun Jetis 2"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
                 </motion.div>
@@ -67,8 +67,8 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Pertanian/PT1.webp"
-                    alt="Desa Segarjaya 3"
+                    src="/Image/Sentra Bibit Jamur/IMG_8471.jpg"
+                    alt="Dusun Jetis 3"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
                 </motion.div>
@@ -86,8 +86,8 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Pantai Pulau Putri/PPP1.webp"
-                    alt="Desa Segarjaya 4"
+                    src="/Image/Penggilingan Padi/DSC03556.JPG"
+                    alt="Dusun Jetis 4"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
                 </motion.div>

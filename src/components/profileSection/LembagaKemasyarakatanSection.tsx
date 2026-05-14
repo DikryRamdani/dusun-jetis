@@ -5,6 +5,7 @@ interface LembagaItem {
   leader: string;
   description: string;
   activities: string[];
+  image?: string;
 }
 
 export default function LembagaKemasyarakatanSection() {
@@ -19,6 +20,7 @@ export default function LembagaKemasyarakatanSection() {
         "Musyawarah kebutuhan dusun",
         "Pengelolaan inventaris dusun",
       ],
+      image: "/Image/Klompok Kegiatan (POKGIAT)/IMG-20260501-WA0131.jpg",
     },
     {
       title: "PKK Dusun",
@@ -30,6 +32,7 @@ export default function LembagaKemasyarakatanSection() {
         "Edukasi keterampilan produktif",
         "Pengelolaan sampah dan kas umum",
       ],
+      image: "/Image/PKK/IMG-20260501-WA0093.jpg",
     },
     {
       title: "Posyandu",
@@ -100,7 +103,7 @@ export default function LembagaKemasyarakatanSection() {
   ];
 
   return (
-    <div id="lembaga-kemasyarakatan" className="w-full bg-zinc-50">
+    <div id="lembaga-kemasyarakatan" className="w-full bg-white">
       <div className="px-6 sm:px-10 lg:px-16 py-16">
         <motion.div
           className="text-center max-w-3xl mx-auto mb-12"
@@ -124,12 +127,17 @@ export default function LembagaKemasyarakatanSection() {
           {lembaga.map((item, index) => (
             <motion.div
               key={item.title}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-zinc-200 hover:shadow-lg transition-shadow"
+              className="bg-zinc-50 rounded-2xl p-6 shadow-sm border border-zinc-200 hover:shadow-lg transition-shadow flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
             >
+              {item.image && (
+                <div className="w-full h-48 mb-6 overflow-hidden rounded-xl bg-zinc-100">
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                </div>
+              )}
               <p className="text-lime-600 text-sm font-semibold uppercase tracking-wide">
                 {item.leader}
               </p>

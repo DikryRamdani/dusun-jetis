@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [galeriOpen, setGaleriOpen] = useState(false);
-  const [mobileGaleriOpen, setMobileGaleriOpen] = useState(false);
   const navigate = useNavigate();
 
   // Mobile navbar visibility
@@ -48,8 +46,6 @@ export default function Navbar() {
   const handleNavigation = (href: string, closeMenu = true) => {
     if (closeMenu) {
       setOpen(false);
-      setGaleriOpen(false);
-      setMobileGaleriOpen(false);
     }
 
     // Handle hash links for smooth scroll
@@ -123,88 +119,12 @@ export default function Navbar() {
               Karya & Budaya
             </button>
 
-            {/* Dropdown Galeri */}
-            <div className="relative">
-              <button
-                className="flex items-center gap-1 hover:text-lime-600 transition-colors"
-                onClick={() => setGaleriOpen((v) => !v)}
-              >
-                Galeri
-                <motion.svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  animate={{ rotate: galeriOpen ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m19 9-7 7-7-7"
-                  />
-                </motion.svg>
-              </button>
-              <AnimatePresence>
-                {galeriOpen && (
-                  <motion.div
-                    className="absolute top-full left-0 mt-1 w-56 bg-white border border-zinc-200 rounded-lg shadow-lg py-2 z-50"
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <button
-                      onClick={() => handleNavigation("/galeri#galeri-pantai")}
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Pantai Pulau Putri
-                    </button>
-                    <button
-                      onClick={() =>
-                        handleNavigation("/galeri#galeri-pertanian")
-                      }
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Pertanian
-                    </button>
-                    <button
-                      onClick={() => handleNavigation("/galeri#galeri-sekam")}
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Sekam Bakar
-                    </button>
-                    <button
-                      onClick={() => handleNavigation("/galeri#galeri-balai")}
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Balai Desa
-                    </button>
-                    <button
-                      onClick={() =>
-                        handleNavigation("/galeri#galeri-isra-miraj")
-                      }
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Isra Mi&apos;raj
-                    </button>
-                    <button
-                      onClick={() => handleNavigation("/galeri#galeri-tambak")}
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Tambak Ikan
-                    </button>
-                    <button
-                      onClick={() => handleNavigation("/galeri#galeri-majelis")}
-                      className="block w-full text-left px-4 py-2 hover:bg-zinc-50 transition-colors"
-                    >
-                      Majelis Abah Hanafi
-                    </button>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+            <button
+              onClick={() => handleNavigation("/galeri")}
+              className="hover:text-lime-600 transition-colors"
+            >
+              Galeri
+            </button>
             <button
               onClick={() => handleNavigation("/kontak")}
               className="hover:text-lime-600 transition-colors"
@@ -289,92 +209,12 @@ export default function Navbar() {
                   Karya & Budaya
                 </button>
 
-                {/* Mobile Galeri Dropdown */}
                 <button
-                  className="py-2 px-2 rounded hover:bg-zinc-50 flex items-center justify-between w-full text-left transition-colors text-zinc-900"
-                  onClick={() => setMobileGaleriOpen((v) => !v)}
+                  onClick={() => handleNavigation("/galeri")}
+                  className="py-2 px-2 rounded hover:bg-zinc-50 text-left transition-colors text-zinc-900"
                 >
                   Galeri
-                  <motion.svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    animate={{ rotate: mobileGaleriOpen ? 180 : 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m19 9-7 7-7-7"
-                    />
-                  </motion.svg>
                 </button>
-                <AnimatePresence>
-                  {mobileGaleriOpen && (
-                    <motion.div
-                      className="pl-4 flex flex-col gap-1 overflow-hidden"
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <button
-                        onClick={() =>
-                          handleNavigation("/galeri#galeri-pantai")
-                        }
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Pantai Pulau Putri
-                      </button>
-                      <button
-                        onClick={() =>
-                          handleNavigation("/galeri#galeri-pertanian")
-                        }
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Pertanian
-                      </button>
-                      <button
-                        onClick={() => handleNavigation("/galeri#galeri-sekam")}
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Sekam Bakar
-                      </button>
-                      <button
-                        onClick={() => handleNavigation("/galeri#galeri-balai")}
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Balai Desa
-                      </button>
-                      <button
-                        onClick={() =>
-                          handleNavigation("/galeri#galeri-isra-miraj")
-                        }
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Isra Mi&apos;raj
-                      </button>
-                      <button
-                        onClick={() =>
-                          handleNavigation("/galeri#galeri-tambak")
-                        }
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Tambak Ikan
-                      </button>
-                      <button
-                        onClick={() =>
-                          handleNavigation("/galeri#galeri-majelis")
-                        }
-                        className="py-2 px-2 rounded hover:bg-zinc-50 text-zinc-900 text-left transition-colors"
-                      >
-                        Majelis Abah Hanafi
-                      </button>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
                 <button
                   onClick={() => handleNavigation("/kontak")}
                   className="py-2 px-2 rounded hover:bg-zinc-50 text-left transition-colors text-zinc-900"

@@ -9,7 +9,7 @@ export default function VisiMisiSection() {
   ];
 
   return (
-    <div id="visi-misi" className="w-full bg-white">
+    <div id="visi-misi" className="w-full bg-zinc-50">
       <div className="px-6 sm:px-10 lg:px-16 py-16">
         <motion.div
           className="text-center max-w-3xl mx-auto mb-12"
@@ -41,7 +41,7 @@ export default function VisiMisiSection() {
             </p>
           </motion.div>
           <motion.div
-            className="bg-zinc-50 rounded-2xl p-8 border border-zinc-200"
+            className="bg-white rounded-2xl p-8 border border-zinc-200"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}

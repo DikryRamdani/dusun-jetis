@@ -38,7 +38,7 @@ const OrgNode = ({
 
 export default function StrukturOrganisasiSection() {
   return (
-    <div id="struktur-organisasi" className="w-full bg-zinc-50/50 relative overflow-hidden">
+    <div id="struktur-organisasi" className="w-full bg-zinc-50 relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-lime-400/5 blur-[120px] rounded-full pointer-events-none" />
 

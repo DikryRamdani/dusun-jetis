@@ -3,14 +3,14 @@ import ImageCarousel from "../ImageCarousel";
 
 export default function GaleriSection() {
   const galleries = [
-    { src: "/Image/Gapura/Gapura1.webp", alt: "Galeri 1" },
-    { src: "/Image/Kantor Desa/KD1.webp", alt: "Galeri 2" },
-    { src: "/Image/Majelis Talim ArRidho/MTAR1.webp", alt: "Galeri 3" },
-    { src: "/Image/Pantai Pulau Putri/PPP1.webp", alt: "Galeri 4" },
-    { src: "/Image/Sekam Bakar/SB2.webp", alt: "Galeri 5" },
-    { src: "/Image/Rumah Dodol/RD1.webp", alt: "Galeri 6" },
-    { src: "/Image/Pertanian/PT1.webp", alt: "Galeri 7" },
-    { src: "/Image/Tambak Ikan/TI1.webp", alt: "Galeri 8" },
+    { src: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG", alt: "Galeri Dusun Jetis 1" },
+    { src: "/Image/Pak Dukuh dan peta_/Peta Dusun (35 x 80 cm).png", alt: "Galeri Dusun Jetis 2" },
+    { src: "/Image/Sentra Bibit Jamur/IMG_8471.jpg", alt: "Galeri Dusun Jetis 3" },
+    { src: "/Image/Penggilingan Padi/DSC03556.JPG", alt: "Galeri Dusun Jetis 4" },
+    { src: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG", alt: "Galeri Dusun Jetis 5" },
+    { src: "/Image/Klompok Kegiatan (POKGIAT)/IMG-20260501-WA0131.jpg", alt: "Galeri Dusun Jetis 6" },
+    { src: "/Image/PKK/IMG-20260501-WA0063.jpg", alt: "Galeri Dusun Jetis 7" },
+    { src: "/Image/SENTRA JAMU_/DSC03641.JPG", alt: "Galeri Dusun Jetis 8" },
   ];
 
   return (

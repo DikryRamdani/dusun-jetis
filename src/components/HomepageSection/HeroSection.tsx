@@ -14,12 +14,9 @@ export default function HeroSection() {
         transition={{ duration: 1.6, ease: [0.22, 0.8, 0.2, 1] }}
         style={{ willChange: "transform, opacity" }}
       >
-        <video
-          src="/video/VidProfilDesa.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
+          src="/Image/heroSection.png"
+          alt="Dusun Jetis Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Gradient Overlays */}

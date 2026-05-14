@@ -6,6 +6,7 @@ interface PotensiEkonomiItem {
   origin: string;
   description: string;
   highlights: string[];
+  image: string;
 }
 
 export default function PotensiEkonomiSection() {
@@ -21,6 +22,7 @@ export default function PotensiEkonomiSection() {
         "Jejak sejarah kereta tradisional",
         "Pemasaran berbasis rekomendasi",
       ],
+      image: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG",
     },
     {
       title: "Bengkel Andong Pak Hono",
@@ -33,6 +35,7 @@ export default function PotensiEkonomiSection() {
         "Pembuatan roda dan gerobak",
         "Meneruskan warisan Jetis Pande",
       ],
+      image: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG",
     },
     {
       title: "Sentra Bibit Jamur",
@@ -45,6 +48,7 @@ export default function PotensiEkonomiSection() {
         "Skala produksi rutin",
         "Distribusi ke pasar pertanian",
       ],
+      image: "/Image/Sentra Bibit Jamur/IMG_8471.jpg",
     },
     {
       title: "Sentra Jamu",
@@ -57,6 +61,7 @@ export default function PotensiEkonomiSection() {
         "Pengolahan manual dan segar",
         "Izin UMKM dan pasar lokal",
       ],
+      image: "/Image/SENTRA JAMU_/DSC03641.JPG",
     },
     {
       title: "Penggilingan Padi",
@@ -69,6 +74,7 @@ export default function PotensiEkonomiSection() {
         "Operasional mengikuti musim panen",
         "Dukungan ketahanan pangan",
       ],
+      image: "/Image/Penggilingan Padi/DSC03556.JPG",
     },
   ];
 
@@ -115,12 +121,15 @@ export default function PotensiEkonomiSection() {
           {potensiEkonomi.map((item, index) => (
             <motion.div
               key={item.title}
-              className="bg-zinc-50 rounded-2xl p-6 shadow-sm border border-zinc-100 hover:shadow-lg transition-all hover:-translate-y-1"
+              className="bg-zinc-50 rounded-2xl p-6 shadow-sm border border-zinc-100 hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
             >
+              <div className="w-full h-48 mb-6 overflow-hidden rounded-xl bg-zinc-200">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+              </div>
               <p className="text-lime-600 text-sm font-semibold uppercase tracking-wide">
                 {item.subtitle}
               </p>

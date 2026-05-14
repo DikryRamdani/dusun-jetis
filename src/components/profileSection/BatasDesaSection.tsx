@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import MapDesa from "../MapDesa";
 
 export default function BatasDesaSection() {
   const batasWilayah = [
@@ -28,11 +27,11 @@ export default function BatasDesaSection() {
           Wilayah
         </p>
         <h2 className="text-3xl lg:text-4xl font-bold text-zinc-900">
-          Batas Desa Segarjaya
+          Lokasi Dusun Jetis
         </h2>
       </motion.div>
-      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <motion.div
+      <div className="max-w-4xl mx-auto w-full">
+        {/* <motion.div
           className="bg-white rounded-2xl p-8 shadow-lg"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -75,19 +74,22 @@ export default function BatasDesaSection() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
         <motion.div
-          className="bg-white rounded-2xl overflow-hidden shadow-lg"
+          className="bg-white rounded-2xl overflow-hidden shadow-lg flex items-center justify-center bg-zinc-100 p-2"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="h-full min-h-75 bg-zinc-200 flex items-center justify-center">
-            <div className="text-center p-8">
-              <MapDesa />
-            </div>
-          </div>
+          <iframe 
+            src="https://maps.google.com/maps?q=Masjid+AL+IKHLAS+Jetis+pandean,+Patalan,+Bantul&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            className="w-full h-[400px] md:h-[500px] rounded-xl border-0 shadow-sm"
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Peta Dusun Jetis"
+          />
         </motion.div>
       </div>
     </div>

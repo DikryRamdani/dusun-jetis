@@ -10,7 +10,7 @@ export default function JamOperasionalSection() {
   return (
     <div
       id="jam-operasional"
-      className="w-full px-6 sm:px-10 lg:px-16 py-16 bg-zinc-50"
+      className="w-full px-6 sm:px-10 lg:px-16 py-16 bg-white"
     >
       <motion.div
         className="text-center max-w-3xl mx-auto mb-12"
