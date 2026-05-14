@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { PotensiEkonomiSection, KegiatanDusunSection } from "../components/KarbudSection";
 
 export default function KaryaBudaya() {

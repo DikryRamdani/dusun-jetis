@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
 export default function BatasDesaSection() {
-  const batasWilayah = [
-    { arah: "Utara", desa: "Laut Jawa" },
-    { arah: "Selatan", desa: "Desa Segaran" },
-    { arah: "Timur", desa: "Desa Baturaden dan Desa Karyabakti" },
-    {
-      arah: "Barat",
-      desa: "Desa Telagajaya dan Desa Tanjung Pakis",
-    },
-  ];
+  // const batasWilayah = [
+  //   { arah: "Utara", desa: "Laut Jawa" },
+  //   { arah: "Selatan", desa: "Desa Segaran" },
+  //   { arah: "Timur", desa: "Desa Baturaden dan Desa Karyabakti" },
+  //   {
+  //     arah: "Barat",
+  //     desa: "Desa Telagajaya dan Desa Tanjung Pakis",
+  //   },
+  // ];
 
   return (
     <div
