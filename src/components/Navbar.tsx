@@ -95,7 +95,7 @@ export default function Navbar() {
             <div className="leading-tight">
               <p className="text-sm text-lime-600 font-medium">Profil Desa</p>
               <h1 className="text-lg sm:text-xl font-semibold text-zinc-900">
-                Desa Segarjaya
+                Dusun Jetis
               </h1>
             </div>
           </Link>
