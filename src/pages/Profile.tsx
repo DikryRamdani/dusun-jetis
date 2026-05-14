@@ -2,9 +2,7 @@ import {
   BatasDesaSection,
   JamOperasionalSection,
   LembagaKemasyarakatanSection,
-  PopulasiSection,
   ProfilKepalaDusunSection,
-  // PotensiDesaSection,
   ProfileHeroSection,
   SejarahSection,
   StrukturOrganisasiSection,
@@ -19,9 +17,7 @@ export default function Profile() {
       <StrukturOrganisasiSection />
       <ProfilKepalaDusunSection />
       <VisiMisiSection />
-      {/* <PopulasiSection /> */}
       <LembagaKemasyarakatanSection />
-      {/* <PotensiDesaSection /> */}
       <BatasDesaSection />
       <JamOperasionalSection />
     </section>
