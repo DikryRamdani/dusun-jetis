@@ -56,21 +56,21 @@ export default function KontakSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <ContactCard
-              href="https://wa.me/6285883913894"
+              href="https://wa.me/628985513942"
               icon={WhatsAppIcon}
               iconBgColor="bg-green-500"
-              title="WhatsApp Operator Desa"
-              subtitle="Respon cepat di jam kerja"
-              value="(+62) 858-8391-3894"
+              title="Bapak Eka Wulanjari"
+              subtitle="Kepala Dusun"
+              value="(+62) 898-5513-942"
               external
             />
             <ContactCard
-              href="mailto:segarjaya.pemdes.karawangkab@gmail.com"
+              href="mailto:dusunjetispatalan@gmail.com"
               icon={EmailIcon}
               iconBgColor="bg-zinc-700"
               title="Email Dusun"
               subtitle="Untuk keperluan resmi"
-              value="dusun.jetis@gmail.com"
+              value="dusunjetispatalan@gmail.com"
             />
           </motion.div>
 

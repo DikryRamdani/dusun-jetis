@@ -1,34 +1,17 @@
 import { motion } from "framer-motion";
-import InteractiveMap from "../components/InteractiveMap";
 
 export default function Contact() {
   const kontakInfo = [
     {
       icon: (
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-          />
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
       ),
-      judul: "Alamat",
-      detail:
-        "Jl. Raya Segarjaya No. 1, Kec. Batujaya, Kab. Karawang, Jawa Barat 41365",
-      link: "https://maps.google.com/?q=Desa+Segarjaya+Karawang",
-      linkText: "Lihat di Google Maps",
+      judul: "WhatsApp Bapak Eka Wulanjari",
+      detail: "Kepala Dusun — (+62) 898-5513-942",
+      link: "https://wa.me/628985513942?text=Halo%20Bapak%20Eka%20Wulanjari%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20dusun.",
+      linkText: "Chat WhatsApp",
     },
     {
       icon: (
@@ -47,18 +30,9 @@ export default function Contact() {
         </svg>
       ),
       judul: "Email",
-      detail: "segarjaya.pemdes.karawangkab@gmail.com",
-      link: "mailto:segarjaya.pemdes.karawangkab@gmail.com",
+      detail: "dusunjetispatalan@gmail.com",
+      link: "mailto:dusunjetispatalan@gmail.com",
       linkText: "Kirim Email",
-    },
-  ];
-
-  const petugasKontak = [
-    {
-      nama: "Bapak Dedi Suryadi",
-      jabatan: "Operator Desa",
-      whatsapp: "6285883913894",
-      foto: "/Image/tes2.webp",
     },
   ];
 
@@ -210,136 +184,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Petugas Kontak & WhatsApp */}
-      <section className="py-20 px-6 sm:px-10 lg:px-16 bg-zinc-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center max-w-3xl mx-auto mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <p className="text-lime-600 font-semibold text-sm tracking-widest uppercase mb-3">
-              Layanan Cepat
-            </p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-zinc-900">
-              Hubungi via WhatsApp
-            </h2>
-            <p className="mt-4 text-zinc-600">
-              Untuk respon lebih cepat, silakan hubungi petugas desa melalui
-              WhatsApp.
-            </p>
-          </motion.div>
-
-          <div className="flex flex-col items-center gap-8 max-w-3xl mx-auto">
-            {petugasKontak.map((petugas, index) => (
-              <motion.div
-                key={index}
-                className="bg-zinc-50 p-6 rounded-2xl border border-zinc-200 w-full max-w-2xl"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-zinc-300 overflow-hidden relative">
-                    <div className="w-full h-full bg-gradient-to-br from-lime-400 to-lime-600 flex items-center justify-center text-white text-2xl font-bold">
-                      {petugas.nama.charAt(0)}
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-zinc-900">
-                      {petugas.nama}
-                    </h3>
-                    <p className="text-sm text-lime-600">{petugas.jabatan}</p>
-                  </div>
-                </div>
-                <a
-                  href={`https://wa.me/${petugas.whatsapp}?text=Halo%20${encodeURIComponent(petugas.jabatan)}%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20desa.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-xl font-medium transition-colors"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                  </svg>
-                  Chat WhatsApp
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Jam Operasional section removed (moved into Informasi Kontak) */}
-
-      {/* Peta Lokasi */}
-      <section className="py-20 px-6 sm:px-10 lg:px-16 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center max-w-3xl mx-auto mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <p className="text-lime-600 font-semibold text-sm tracking-widest uppercase mb-3">
-              Lokasi Kami
-            </p>
-            <h2 className="text-3xl lg:text-4xl font-bold text-zinc-900">
-              Kantor Desa Segarjaya
-            </h2>
-            <p className="mt-4 text-zinc-600">
-              Kunjungi kantor desa kami untuk layanan administrasi dan informasi
-              lebih lanjut.
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="rounded-2xl overflow-hidden shadow-lg border border-zinc-200"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <InteractiveMap />
-          </motion.div>
-
-          <div className="mt-6 text-center">
-            <a
-              href="https://maps.app.goo.gl/z5qQQSuwg1EBLc2J8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-lime-600 hover:bg-lime-700 text-white px-6 py-3 rounded-xl font-medium transition-colors"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                />
-              </svg>
-              Buka di Google Maps
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
