@@ -2,7 +2,7 @@ export default function ProfileHeroSection() {
   return (
     <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden -mt-[60px] pt-[60px]">
       <img
-        src="/image/heroSection.webp"
+        src="/Image/heroSection.webp"
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover"
       />
