@@ -41,19 +41,19 @@ export default function Galeri() {
   return (
     <section className="w-full bg-zinc-50 min-h-screen pb-20">
       {/* Hero Section */}
-      <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden -mt-[60px] pt-[60px]">
+     <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden -mt-[60px] pt-[60px]">
         {/* Background Image */}
         <img
           src="/Image/heroSection.webp"
           alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Subtle black gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/10" />
-        {/* Smooth fade to the next section */}
-        <div className="absolute bottom-0 left-0 right-0 h-36 pointer-events-none bg-gradient-to-b from-transparent to-zinc-50" />
-        
 
+        {/* Subtle black gradient overlay (like profil hero) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-transparent" />
+
+        {/* Smooth fade to the next section (white) */}
+        <div className="absolute bottom-0 left-0 right-0 h-36 pointer-events-none bg-gradient-to-b from-transparent to-white" />
       </section>
 
       {/* Gallery Header */}
