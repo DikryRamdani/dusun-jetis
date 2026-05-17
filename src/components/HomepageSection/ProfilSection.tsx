@@ -27,7 +27,7 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Bengkel Andong Pak Hono_/DSC03541.JPG"
+                    src="/Image/Posyandu/IMG-20260426-WA0033.webp"
                     alt="Dusun Jetis 1"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
@@ -46,7 +46,7 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Posyandu/IMG-20260426-WA0001.jpg"
+                    src="/Image/Bengkel Andong Pandawa Lima_/DSC03564.webp"
                     alt="Dusun Jetis 2"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
@@ -67,7 +67,7 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Sentra Bibit Jamur/IMG_8471.jpg"
+                    src="/Image/Sentra Bibit Jamur/IMG_8471.webp"
                     alt="Dusun Jetis 3"
                     className="w-full h-52 lg:h-60 object-cover"
                   />
@@ -86,7 +86,7 @@ export default function ProfilSection() {
                   style={{ willChange: "transform, opacity" }}
                 >
                   <img
-                    src="/Image/Penggilingan Padi/DSC03556.JPG"
+                    src="/Image/Penggilingan Padi/DSC03556.webp"
                     alt="Dusun Jetis 4"
                     className="w-full h-52 lg:h-60 object-cover"
                   />

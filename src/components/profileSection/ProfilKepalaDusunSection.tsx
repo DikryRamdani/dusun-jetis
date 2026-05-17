@@ -31,7 +31,7 @@ export default function ProfilKepalaDusunSection() {
         >
           <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
             <img
-              src="/Image/Pak Dukuh dan peta_/IMG_9474.jpg"
+              src="/Image/Pak Dukuh dan peta_/IMG_9474.webp"
               alt="Eka Wulanjari - Kepala Dusun Jetis"
               className="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl object-cover object-[center_-20px] border-4 border-lime-100 shadow-sm shrink-0"
             />

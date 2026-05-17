@@ -22,7 +22,7 @@ export default function PotensiEkonomiSection() {
         "Jejak sejarah kereta tradisional",
         "Pemasaran berbasis rekomendasi",
       ],
-      image: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG",
+      image: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.webp",
     },
     {
       title: "Bengkel Andong Pak Hono",
@@ -35,7 +35,7 @@ export default function PotensiEkonomiSection() {
         "Pembuatan roda dan gerobak",
         "Meneruskan warisan Jetis Pande",
       ],
-      image: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG",
+      image: "/Image/Bengkel Andong Pak Hono_/DSC03541.webp",
     },
     {
       title: "Sentra Bibit Jamur",
@@ -48,7 +48,7 @@ export default function PotensiEkonomiSection() {
         "Skala produksi rutin",
         "Distribusi ke pasar pertanian",
       ],
-      image: "/Image/Sentra Bibit Jamur/IMG_8471.jpg",
+      image: "/Image/Sentra Bibit Jamur/IMG_8471.webp",
     },
     {
       title: "Sentra Jamu",
@@ -61,7 +61,7 @@ export default function PotensiEkonomiSection() {
         "Pengolahan manual dan segar",
         "Izin UMKM dan pasar lokal",
       ],
-      image: "/Image/SENTRA JAMU_/DSC03641.JPG",
+      image: "/Image/SENTRA JAMU_/DSC03641.webp",
     },
     {
       title: "Penggilingan Padi",
@@ -74,7 +74,7 @@ export default function PotensiEkonomiSection() {
         "Operasional mengikuti musim panen",
         "Dukungan ketahanan pangan",
       ],
-      image: "/Image/Penggilingan Padi/DSC03556.JPG",
+      image: "/Image/Penggilingan Padi/DSC03556.webp",
     },
   ];
 

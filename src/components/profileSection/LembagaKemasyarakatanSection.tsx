@@ -20,7 +20,7 @@ export default function LembagaKemasyarakatanSection() {
         "Musyawarah kebutuhan dusun",
         "Pengelolaan inventaris dusun",
       ],
-      image: "/Image/Klompok Kegiatan (POKGIAT)/IMG-20260501-WA0131.jpg",
+      image: "/Image/Klompok Kegiatan (POKGIAT)/IMG-20260501-WA0131.webp",
     },
     {
       title: "PKK Dusun",
@@ -32,7 +32,7 @@ export default function LembagaKemasyarakatanSection() {
         "Edukasi keterampilan produktif",
         "Pengelolaan sampah dan kas umum",
       ],
-      image: "/Image/PKK/IMG-20260501-WA0093.jpg",
+      image: "/Image/PKK/IMG-20260501-WA0093.webp",
     },
     {
       title: "Posyandu",

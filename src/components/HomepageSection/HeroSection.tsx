@@ -15,7 +15,7 @@ export default function HeroSection() {
         style={{ willChange: "transform, opacity" }}
       >
         <img
-          src="/Image/heroSection.png"
+          src="/Image/heroSection.webp"
           alt="Dusun Jetis Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />

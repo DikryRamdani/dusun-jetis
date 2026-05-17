@@ -2,21 +2,21 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  { src: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG", alt: "Bengkel Andong Pak Hono 1" },
-  { src: "/Image/Bengkel Andong Pak Hono_/DSC03546.JPG", alt: "Bengkel Andong Pak Hono 2" },
-  { src: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG", alt: "Bengkel Andong Pandawa Lima" },
-  { src: "/Image/Klompok Kegiatan (POKGIAT)/IMG-20260501-WA0131.jpg", alt: "POKGIAT 1" },
-  { src: "/Image/Klompok Kegiatan (POKGIAT)/_storage_emulated_0_Android_media_com.whatsapp_WhatsApp_Media_WhatsApp Images_IMG-20260501-WA0175 (1).jpg", alt: "POKGIAT 2" },
-  { src: "/Image/Penggilingan Padi/DSC03556.JPG", alt: "Penggilingan Padi 1" },
-  { src: "/Image/Penggilingan Padi/DSC03557.JPG", alt: "Penggilingan Padi 2" },
-  { src: "/Image/PKK/IMG-20260501-WA0063.jpg", alt: "PKK 1" },
-  { src: "/Image/PKK/IMG-20260501-WA0093.jpg", alt: "PKK 2" },
-  { src: "/Image/Posyandu/IMG-20260426-WA0001.jpg", alt: "Posyandu 1" },
-  { src: "/Image/Posyandu/IMG-20260426-WA0002.jpg", alt: "Posyandu 2" },
-  { src: "/Image/SENTRA JAMU_/DSC03641.JPG", alt: "Sentra Jamu 1" },
-  { src: "/Image/SENTRA JAMU_/DSC03643.JPG", alt: "Sentra Jamu 2" },
-  { src: "/Image/Sentra Bibit Jamur/IMG_8471.jpg", alt: "Sentra Bibit Jamur 1" },
-  { src: "/Image/Sentra Bibit Jamur/IMG_8475.jpg", alt: "Sentra Bibit Jamur 2" },
+  { src: "/Image/Bengkel Andong Pak Hono_/DSC03541.webp", alt: "Bengkel Andong Pak Hono 1" },
+  { src: "/Image/Bengkel Andong Pak Hono_/DSC03546.webp", alt: "Bengkel Andong Pak Hono 2" },
+  { src: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.webp", alt: "Bengkel Andong Pandawa Lima" },
+  { src: "/Image/Klompok Kegiatan (POKGIAT)/IMG-20260501-WA0131.webp", alt: "POKGIAT 1" },
+  { src: "/Image/Klompok Kegiatan (POKGIAT)/_storage_emulated_0_Android_media_com.whatsapp_WhatsApp_Media_WhatsApp Images_IMG-20260501-WA0175 (1).webp", alt: "POKGIAT 2" },
+  { src: "/Image/Penggilingan Padi/DSC03556.webp", alt: "Penggilingan Padi 1" },
+  { src: "/Image/Penggilingan Padi/DSC03557.webp", alt: "Penggilingan Padi 2" },
+  { src: "/Image/PKK/IMG-20260501-WA0063.webp", alt: "PKK 1" },
+  { src: "/Image/PKK/IMG-20260501-WA0093.webp", alt: "PKK 2" },
+  { src: "/Image/Posyandu/IMG-20260426-WA0001.webp", alt: "Posyandu 1" },
+  { src: "/Image/Posyandu/IMG-20260426-WA0002.webp", alt: "Posyandu 2" },
+  { src: "/Image/SENTRA JAMU_/DSC03641.webp", alt: "Sentra Jamu 1" },
+  { src: "/Image/SENTRA JAMU_/DSC03643.webp", alt: "Sentra Jamu 2" },
+  { src: "/Image/Sentra Bibit Jamur/IMG_8471.webp", alt: "Sentra Bibit Jamur 1" },
+  { src: "/Image/Sentra Bibit Jamur/IMG_8475.webp", alt: "Sentra Bibit Jamur 2" },
 ];
 
 export default function Galeri() {
@@ -44,7 +44,7 @@ export default function Galeri() {
       <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden -mt-[60px] pt-[60px]">
         {/* Background Image */}
         <img
-          src="/Image/heroSection.png"
+          src="/Image/heroSection.webp"
           alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover"
         />

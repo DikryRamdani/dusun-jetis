@@ -29,32 +29,32 @@ export default function PotensiCarousel() {
     {
       title: "Penggilingan Padi",
       desc: "Mengolah hasil pertanian warga, Jetis memiliki layanan penggilingan padi yang membantu operasional musim panen dan mendukung ketahanan pangan lokal.",
-      image: "/Image/Penggilingan Padi/DSC03556.JPG",
-      imageMobile: "/Image/Penggilingan Padi/DSC03556.JPG",
+      image: "/Image/Penggilingan Padi/DSC03556.webp",
+      imageMobile: "/Image/Penggilingan Padi/DSC03556.webp",
     },
     {
       title: "Sentra Bibit Jamur",
       desc: "Produksi bibit jamur mandiri yang dilakukan dengan proses sterilisasi dan pembibitan terkontrol agar hasil panen stabil dan siap diedarkan ke pasar pertanian.",
-      image: "/Image/Sentra Bibit Jamur/IMG_8471.HEIC",
-      imageMobile: "/Image/Sentra Bibit Jamur/IMG_8471.HEIC",
+      image: "/Image/Sentra Bibit Jamur/IMG_8471.webp",
+      imageMobile: "/Image/Sentra Bibit Jamur/IMG_8471.webp",
     },
     {
       title: "Bengkel Andong Pandawa Lima",
       desc: "Meneruskan jejak sejarah kereta tradisional dengan keahlian pembuatan roda dan reparasi andong turun-temurun ala Jetis Pande.",
-      image: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG",
-      imageMobile: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.JPG",
+      image: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.webp",
+      imageMobile: "/Image/Bengkel Andong Pandawa Lima_/DSC03564.webp",
     },
     {
       title: "Bengkel Andong Pak Hono",
       desc: "Jasa perbaikan dan pembuatan andong yang terus mewarisi teknik tradisional manual sejak era keemasan Jetis Roda.",
-      image: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG",
-      imageMobile: "/Image/Bengkel Andong Pak Hono_/DSC03541.JPG",
+      image: "/Image/Bengkel Andong Pak Hono_/DSC03541.webp",
+      imageMobile: "/Image/Bengkel Andong Pak Hono_/DSC03541.webp",
     },
     {
       title: "Sentra Jamu Tradisional",
       desc: "Mengolah tanaman empon-empon pekarangan menjadi produk jamu segar seperti kunyit asam dan seruni yang berkualitas dan menyehatkan.",
-      image: "/Image/SENTRA JAMU_/DSC03641.JPG",
-      imageMobile: "/Image/SENTRA JAMU_/DSC03641.JPG",
+      image: "/Image/SENTRA JAMU_/DSC03641.webp",
+      imageMobile: "/Image/SENTRA JAMU_/DSC03641.webp",
     },
   ];
 
