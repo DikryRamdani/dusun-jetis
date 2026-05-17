@@ -86,7 +86,7 @@ export default function Navbar() {
             onClick={() => handleNavigation("/")}
           >
             <img
-              src="/favicon.ico"
+              src="/favicon.png"
               alt="Logo Desa Segarjaya"
               width={36}
               height={36}
